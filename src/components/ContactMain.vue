@@ -15,7 +15,7 @@
             <img src="../assets/images/map-contact.webp" alt="" />
           </div>
           <h2>Location</h2>
-          <p>125,Central Square, New York, NY 286</p>
+          <p>125,Central Square, New York, NY city 286</p>
         </div>
         <div class="contactInfo__box">
           <div class="contactInfo__image">
