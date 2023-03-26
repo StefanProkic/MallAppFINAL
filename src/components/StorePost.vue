@@ -2,7 +2,7 @@
   <div class="storePost">
     <h3>Trending</h3>
     <div class="storePost__wrapper">
-      <div class="storePost__box">
+      <div class="storePost__box" @click="info.pullData()">
         <h4>clothing</h4>
         <h2>Nike</h2>
         <div class="storePost__image">
@@ -27,7 +27,10 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+import { useInfoStore } from "@/stores/counter.js";
+const info = useInfoStore();
+</script>
 
 <style lang="scss" scoped>
 .storePost {

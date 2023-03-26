@@ -1,12 +1,14 @@
-import { ref, computed } from 'vue'
-import { defineStore } from 'pinia'
+//import { ref } from "vue";
+import { defineStore } from "pinia";
+import { useRoute } from "vue-router";
 
-export const useCounterStore = defineStore('counter', () => {
-  const count = ref(0)
-  const doubleCount = computed(() => count.value * 2)
-  function increment() {
-    count.value++
+export const useInfoStore = defineStore("info", () => {
+  const id = useRoute().params.id;
+  function pullData() {
+    fetch("../stores.json")
+      .then((resp) => resp.json())
+      .then((json) => console.log(json));
   }
 
-  return { count, doubleCount, increment }
-})
+  return { id, pullData };
+});

@@ -35,8 +35,14 @@
 
 <script>
 import storesData from "../stores.json";
+/* import { useRoute } from "vue-router"; */
 
 export default {
+  setup() {
+    /* const route = useRoute(); */
+    /* const id = route.params.id; */
+  },
+
   data() {
     return { store: storesData };
   },
