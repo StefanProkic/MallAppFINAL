@@ -5,7 +5,7 @@
       <p v-for="txt in store" :key="txt.id">{{ txt.info }}</p>
       <div class="singleStore__legend">
         <img src="@/assets/images/building.webp" alt="building" />
-        <h2>first floor</h2>
+        <h2>ground floor</h2>
       </div>
     </div>
     <div class="singleStore__info">
@@ -20,13 +20,15 @@
       <div class="singleStore__infoBox">
         <img src="../assets/images/email.webp" alt="clock" />
         <h3>email</h3>
-        <a href="mailto:nike@gmail.com"><span>nike@gmail.com</span></a>
+        <a href="mailto:nordstorm@gmail.com"
+          ><span>nordstorm@gmail.com</span></a
+        >
       </div>
       <div class="singleStore__infoBox">
         <img src="../assets/images/web.webp" alt="clock" />
         <h3>web</h3>
-        <a href="https://www.nike.com/" target="_blank"
-          ><span>https://nike.com</span></a
+        <a href="https://www.nordstrom.com/" target="_blank"
+          ><span>https://nordstorm.com</span></a
         >
       </div>
     </div>
@@ -34,14 +36,10 @@
 </template>
 
 <script>
-import storesData from "../stores.json";
-/* import { useRoute } from "vue-router"; */
+import storesData from "/storeNordstorm.json";
 
 export default {
-  setup() {
-    /* const route = useRoute(); */
-    /* const id = route.params.id; */
-  },
+  setup() {},
 
   data() {
     return { store: storesData };

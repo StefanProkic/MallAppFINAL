@@ -5,7 +5,7 @@ import { useRoute } from "vue-router";
 export const useInfoStore = defineStore("info", () => {
   const id = useRoute().params.id;
   function pullData() {
-    fetch("../stores.json")
+    fetch("/stores.json")
       .then((resp) => resp.json())
       .then((json) => console.log(json));
   }

@@ -1,0 +1,14 @@
+[
+    {
+        "id": "1",
+        "title": "Nordstorm",
+        "info": "Is a brand-new Nordstrom or Nordstrom Rack coming to a shopping mall near you? Check our list of all stores slated to open from now until 2024. International shipping costs will be calculated and guaranteed by Borderfree based on the items you are purchasing, your chosen shipping method and your shipping destination. Unfortunately, Borderfree can't offer free shipping to international destinations, even for Nordstrom Rewards members. International customers may ship to multiple addresses by placing a separate order for each shipping address. Borderfree can't ship single international orders to multiple addresses at this time.",
+        "productName1" : "Club Hoodie",
+        "price1": "$60.00",
+        "description1": "Cotton-rich fleece keeps you comfy in a street-ready hoodie with a bold Swoosh logo on the chest.",
+        "src": "@/assets/images/nike-hoodie.webp"
+        
+    }
+    
+
+]

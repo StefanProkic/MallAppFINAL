@@ -2,7 +2,14 @@
   <div class="storePost">
     <h3>Trending</h3>
     <div class="storePost__wrapper">
-      <div class="storePost__box" @click="info.pullData()">
+      <div class="storePost__box">
+        <h4>clothing</h4>
+        <h2>Nike</h2>
+        <div class="storePost__image">
+          <img src="../assets/images/nike.webp" alt="" />
+        </div>
+      </div>
+      <div class="storePost__box">
         <h4>clothing</h4>
         <h2>Nike</h2>
         <div class="storePost__image">
@@ -28,8 +35,8 @@
 </template>
 
 <script setup>
-import { useInfoStore } from "@/stores/counter.js";
-const info = useInfoStore();
+/* import { useInfoStore } from "@/stores/counter.js";
+const info = useInfoStore(); */
 </script>
 
 <style lang="scss" scoped>
@@ -42,8 +49,7 @@ const info = useInfoStore();
 
   &__wrapper {
     display: flex;
-    /* grid-template-columns: repeat(3, 320px);
-    grid-template-rows: 367px; */
+
     gap: 90px;
     padding-top: 40px;
   }
@@ -60,8 +66,7 @@ const info = useInfoStore();
   }
   &__image {
     overflow: hidden;
-    /* display: flex;
-    justify-content: center; */
+
     display: inline-block;
     border-radius: 4px;
     height: 242px;
@@ -75,6 +80,7 @@ const info = useInfoStore();
     }
   }
 }
+//hereh
 
 /* mobile responsive */
 @media (max-width: $mobile) {

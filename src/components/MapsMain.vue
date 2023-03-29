@@ -8,6 +8,8 @@
         id="floorMap"
         src="../assets/images/first_floor_app.webp"
         alt="image of first floor"
+        width="732"
+        height="338"
       />
     </div>
     <div class="hero__selectFloors">
@@ -85,6 +87,7 @@ function changeFloor(imgUrl, e) {
     width: 100%;
     display: flex;
     flex-direction: column;
+    gap: 10px;
     align-items: end;
   }
   &__selectFloors button {
@@ -96,6 +99,9 @@ function changeFloor(imgUrl, e) {
     transition: transform 0.2s;
     cursor: pointer;
     color: white;
+    transition: all 0.3s ease-out;
+    font-family: "oswald";
+    letter-spacing: 1px;
   }
   &__activeMaps {
     font-size: 15px !important;

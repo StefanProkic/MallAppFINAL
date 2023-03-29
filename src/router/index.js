@@ -15,9 +15,14 @@ const router = createRouter({
       component: () => import("../views/ContactView.vue"),
     },
     {
-      path: "/single-store/:id",
-      name: "single-store",
-      component: () => import("../views/SingleStoreView.vue"),
+      path: "/single-store/nordstorm",
+      name: "single-store-nordstorm",
+      component: () => import("../views/SingleStoreNordstormView.vue"),
+    },
+    {
+      path: "/single-store/zara",
+      name: "single-store-zara",
+      component: () => import("../views/SingleStoreZaraView.vue"),
     },
   ],
 });

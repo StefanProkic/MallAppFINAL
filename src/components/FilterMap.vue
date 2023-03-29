@@ -1,15 +1,47 @@
 <template>
   <div class="filter">
-    <input type="text" v-model="searchQuery" placeholder="Search..." />
+    <input type="text" v-model="search" placeholder="Search..." />
     <ul>
-      <li v-for="(item, index) in filteredList" :key="index">
-        <span>{{ item }}</span>
+      <li v-for="item in filteredItems" :key="item.name">
+        <a :href="'/single-store/' + item.name">{{ item.name }}</a>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
+import { ref, computed } from "vue";
+
+export default {
+  setup() {
+    const items = ref([
+      { name: "nordstorm" },
+      { name: "macey's" },
+      { name: "petco" },
+      { name: "starbucks" },
+      { name: "zara" },
+      { name: "jcpenney" },
+      { name: "h&m" },
+      { name: "applebees" },
+    ]);
+
+    const search = ref("");
+
+    const filteredItems = computed(() => {
+      return items.value.filter((item) =>
+        item.name.toLowerCase().includes(search.value.toLowerCase())
+      );
+    });
+
+    return {
+      search,
+      filteredItems,
+    };
+  },
+};
+
+// eslint-disable-next-line no-unused-vars
+/* import { RouterLink } from "vue-router";
 import { ref, computed } from "vue";
 
 export default {
@@ -37,7 +69,7 @@ export default {
       filteredList,
     };
   },
-};
+}; */
 </script>
 
 <style lang="scss" scoped>
@@ -51,6 +83,7 @@ export default {
     color: $white;
     margin-bottom: 10px;
     transition: all 0.3s ease-out;
+    font-family: "oswald";
 
     &:focus {
       outline: none; /* Removes the default focus style */
@@ -67,7 +100,11 @@ export default {
       padding-top: 5px;
       padding-bottom: 5px;
       padding-left: 10px;
-
+      a {
+        text-decoration: none;
+        color: $white;
+        text-transform: uppercase;
+      }
       &:hover {
         background-color: $purple;
         padding-left: 5px;

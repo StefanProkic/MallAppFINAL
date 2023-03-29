@@ -1,8 +1,8 @@
 <template>
-  <div class="singleStore">
+  <div class="singleStoreProducts">
     <h2>Special offer</h2>
-    <div class="singleStore__productsWrapper">
-      <div class="singleStore__productsBox">
+    <div class="singleStoreProducts__productsWrapper">
+      <div class="singleStoreProducts__productsBox">
         <h3>sweater - nike</h3>
         <h4>$ 69.99</h4>
         <img src="@/assets/images/sweater_zara.webp" alt="sweater" />
@@ -11,7 +11,7 @@
           corrupti mollitia iusto dignissimos quod obcaecati.
         </p>
       </div>
-      <div class="singleStore__productsBox">
+      <div class="singleStoreProducts__productsBox">
         <h3>sweater - nike</h3>
         <h4>$ 69.99</h4>
         <img src="@/assets/images/sweater_zara.webp" alt="sweater" />
@@ -20,7 +20,7 @@
           corrupti mollitia iusto dignissimos quod obcaecati.
         </p>
       </div>
-      <div class="singleStore__productsBox">
+      <div class="singleStoreProducts__productsBox">
         <h3>sweater - nike</h3>
         <h4>$ 69.99</h4>
         <img src="@/assets/images/sweater_zara.webp" alt="sweater" />
@@ -53,7 +53,7 @@ h4 {
   margin-bottom: 10px;
 }
 
-.singleStore {
+.singleStoreProducts {
   padding-top: 40px;
   padding-bottom: 40px;
 
@@ -113,7 +113,7 @@ h4 {
   h4 {
     font-size: 16px;
   }
-  .singleStore {
+  .singleStoreProducts {
     padding-top: 10%;
     padding-bottom: 10%;
 
