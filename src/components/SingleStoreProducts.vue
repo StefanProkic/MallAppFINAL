@@ -59,8 +59,6 @@ h4 {
 
   &__productsWrapper {
     display: flex;
-    /* grid-template-columns: repeat(3, 363px);
-    grid-template-rows: 635px; */
     gap: 25.2px;
   }
   &__productsBox {

@@ -90,9 +90,6 @@ const info = useInfoStore(); */
     padding: 0 2%;
 
     &__wrapper {
-      /* grid-template-rows: repeat(3, 367px);
-      grid-template-columns: 320px; */
-      /* justify-content: center; */
       flex-direction: column;
       align-items: center;
       gap: 32px;

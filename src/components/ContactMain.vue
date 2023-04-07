@@ -39,8 +39,6 @@
   &__wrapper {
     display: flex;
     align-items: center;
-    /* grid-template-columns: repeat(3, 365px);
-    grid-template-rows: 261px; */
     gap: 22px;
     padding-top: 40px;
   }
@@ -48,8 +46,6 @@
     width: 365px;
     height: 261px;
     background: $white;
-    /* width: 365px;
-    height: 261px; */
     border-radius: 4px;
     padding: 40px;
   }

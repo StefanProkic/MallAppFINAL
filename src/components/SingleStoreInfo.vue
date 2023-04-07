@@ -36,7 +36,7 @@
 </template>
 
 <script>
-import storesData from "/storeNordstorm.json";
+import storesData from "/store.json";
 
 export default {
   setup() {},
@@ -63,7 +63,6 @@ export default {
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 80px;
-    /* font-size: 16px; */
     color: $white;
     line-height: 1.7em;
   }
@@ -74,9 +73,6 @@ export default {
     width: 348px;
     display: flex;
     flex-direction: column;
-
-    /* grid-template-rows: repeat(3, 149px);
-    grid-template-columns: 308px; */
     gap: 15px;
     padding-left: 40px;
   }

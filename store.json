@@ -8,6 +8,11 @@
         "description1": "Cotton-rich fleece keeps you comfy in a street-ready hoodie with a bold Swoosh logo on the chest.",
         "src": "@/assets/images/nike-hoodie.webp"
         
+    },
+    {
+        "id": "zara",
+        "title": "Zara",
+        "info": "s time."
     }
     
 

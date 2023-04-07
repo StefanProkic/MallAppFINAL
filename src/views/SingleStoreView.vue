@@ -1,13 +1,13 @@
 <template>
   <main>
-    <SingleStoreNordstormInfo />
-    <SingleStoreNordstormProducts />
+    <SingleStoreInfo />
+    <SingleStoreProducts />
   </main>
 </template>
 
 <script setup>
-import SingleStoreNordstormInfo from "@/components/SingleStoreInfoNordstorm.vue";
-import SingleStoreNordstormProducts from "@/components/SingleStoreProductsNordstorm.vue";
+import SingleStoreInfo from "@/components/SingleStoreInfo.vue";
+import SingleStoreProducts from "@/components/SingleStoreProducts.vue";
 /* 
 import { ref } from "vue";
 let data = ref([
