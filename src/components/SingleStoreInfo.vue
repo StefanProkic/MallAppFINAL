@@ -1,5 +1,9 @@
 <template>
-  <div class="singleStore">
+  <div>
+    <h1>{{ store.title }}</h1>
+    <p>{{ store.info }}</p>
+  </div>
+  <!-- <div class="singleStore">
     <div class="singleStore__txt">
       <h1 v-for="title in store" :key="title.id">{{ title.title }}</h1>
       <p v-for="txt in store" :key="txt.id">{{ txt.info }}</p>
@@ -32,11 +36,32 @@
         >
       </div>
     </div>
-  </div>
+  </div> -->
 </template>
 
 <script>
-import storesData from "/store.json";
+import { useRoute } from "vue-router";
+import { useStore } from "@/store";
+
+export default {
+  name: "SinglePage",
+  setup() {
+    const route = useRoute();
+    const store = useStore();
+
+    const id = route.params.id;
+
+    const fetchStore = async () => {
+      await store.fetchStores();
+      return store.getStoreById(id);
+    };
+
+    return {
+      store: fetchStore(),
+    };
+  },
+};
+/* import storesData from "/store.json";
 
 export default {
   setup() {},
@@ -44,7 +69,7 @@ export default {
   data() {
     return { store: storesData };
   },
-};
+}; */
 </script>
 
 <style lang="scss" scoped>
